@@ -28,6 +28,9 @@ menuBtn.addEventListener('click', function(){
 
 menuItems.forEach(function(item) {
 item.addEventListener('click', function() {  
+    
+    document.body.classList.remove('mobile-menu-active');
+
     const currentItems = document.querySelector('.active');
     currentItems.classList.remove('active');
     this.classList.add ('active');

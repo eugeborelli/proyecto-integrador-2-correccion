@@ -150,10 +150,15 @@ body.mobile-menu-active ul#menu {
    flex-direction: column;
    align-items: center ;
    justify-content: space-around;
-   height: 100%;
+   height: 50%;
 
    }
 
+   body.mobile-menu-active {
+    overflow: hidden;
+ 
+    }
+ 
 /* MAIN */
 
 section {
@@ -246,7 +251,26 @@ footer{
         flex-direction: row;
     }
         
+    /* ajustes para menu desktop */
+     #menu-button {
+        display: none;
+    }  
 
-       
+     nav {
+        display: block;
+    }
 
+    body.mobile-menu-active header {
+        height: 90px;
+        align-items: center;
+    }
+
+    body.mobile-menu-active nav {
+        height: auto;
+        width: auto;
+    }
+
+    body.mobile-menu-active hul#menu {
+        flex-direction: row;
+    }
 }
